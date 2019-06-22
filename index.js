@@ -25,7 +25,7 @@ app.get("/happy", (req, res) => {
 app.get("/message", (req, res) => {
    //res.send({message: "Hi from the JavaScript Object (json)", from:"node/express App", to:"you"});
    res.json({message: "Hi from the JavaScript Object (json)", from:"node/express App", to:"you"});
-// IMOORTANT: "res.send" causes the content-type:text/html of the response, 
+// IMPORTANT: "res.send" causes the content-type:text/html of the response, 
 // while "res.json", the content-type:application/json. We will see no difference on the output
 // but it might be more correct way to use "send.json" if we try to response/send a json object
 });
